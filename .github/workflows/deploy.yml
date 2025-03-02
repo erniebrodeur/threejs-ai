@@ -28,7 +28,8 @@ jobs:
           node-version: 18
           cache: 'npm'
       - name: Install dependencies
-        run: npm install
+        # Use npm ci instead of npm install for reproducible builds
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Setup Pages
