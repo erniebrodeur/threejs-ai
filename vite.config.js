@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/erniebrodeur/threejs-ai/',
   server: {
     host: true,
     open: true,
